@@ -1,0 +1,233 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: url(https://res.cloudinary.com/dtpgi0zck/image/upload/s--JQWZZPHk--/c_fit,h_580,w_860/v1/EducationHub/photos/lightning-bolts.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  overflow: hidden;
+  color: rgb(238, 238, 238);
+}
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+#errordiv,
+#notvalid {
+  display: none;
+  margin-left: 5%;
+  padding: 1%;
+  color: red;
+}
+#infocontainer {
+  width: 100%;
+}
+#searchcontact {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 100%;
+  align-items: baseline;
+  margin: auto;
+}
+#me {
+  background-color: transparent;
+  padding-inline: 20px;
+  border: none;
+  padding-block: 5px;
+  /* margin: auto; */
+  justify-self: right;
+  color: rgba(255, 255, 255, 0.463);
+}
+#upper-portion {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-block: 5vh;
+  padding-inline: 5%;
+}
+#current-info {
+  display: block;
+  width: max-content;
+}
+.current-weather div:first-child {
+  padding-right: 20px;
+}
+#datetime {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#time {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+#time div:first-child {
+  font-size: 72px;
+}
+#time div:last-child {
+  font-size: 30px;
+  /* padding-left: 20%; */
+}
+#date {
+  font-size: 30px;
+  justify-content: space-between;
+}
+#place {
+  text-align: end;
+  justify-content: end;
+}
+
+#current-weather-container {
+  background-color: rgba(0, 0, 0, 0.511);
+  padding-block: 10px;
+  padding-inline: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+#searchdiv {
+  color: rgba(255, 255, 255, 0.632);
+  padding-top: 20px;
+  padding-left: 5%;
+  /* margin-left: auto; */
+}
+input:focus {
+  color: rgba(255, 255, 255, 0.632);
+}
+#searchbar {
+  padding-block: 5px;
+  padding-left: 15px;
+  width: 250px;
+  background-color: transparent;
+  border: none;
+}
+#searchbtn {
+  background-color: transparent;
+  padding-block: 5px;
+  padding-inline: 20px;
+  color: rgba(255, 255, 255, 0.463);
+  border: none;
+}
+.current-weather {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#forcast {
+  background-color: rgba(0, 0, 0, 0.447);
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding: 10px 25px;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#futuredayforcast {
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  padding-block: 10px;
+  margin-inline: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#today {
+  display: flex;
+
+  width: 320px;
+  padding: 30px 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+#todayinnerdiv {
+  display: block;
+  justify-content: space-between;
+}
+#todayinnerdiv #weekday {
+  padding: 5px 15px;
+  background-color: rgb(40, 40, 40);
+  width: fit-content;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  text-align: center;
+}
+#todayinnerdiv #temp {
+  font-size: 20px;
+  margin-block: 10px;
+}
+/* #futuredayforcast{
+    font-size: 14px;
+} */
+#weekday {
+  width: 50px;
+  padding: 5px 5px;
+  margin: auto;
+  background-color: rgb(40, 40, 40);
+  border: none;
+  border-radius: 20px;
+}
+#temp {
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1020px) {
+  /* #place {
+    justify-content: start;
+    text-align: start;
+    margin-left: 10px;
+    margin-top: 10px;
+  } */
+  #forcast {
+    justify-content: start;
+    align-items: none;
+    overflow-y: scroll;
+  }
+}
+@media only screen and (max-width: 560px) {
+  #upper-portion {
+    padding: 3%;
+    display: block;
+  }
+  #place {
+    justify-content: start;
+    text-align: start;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: ;
+  }
+  #upperportion > div {
+    justify-content: center;
+    text-align: center;
+  }
+  #forcast {
+    justify-content: start;
+    align-items: none;
+    overflow-y: scroll;
+    /* display */
+  }
+  #searchdiv {
+    padding-left: 1%;
+  }
+  #searchbar {
+    width: 165px;
+  }
+  #time div:first-child {
+    font-size: 64px;
+  }
+  #time div:last-child {
+    font-size: 22px;
+  }
+  #date {
+    font-size: 30px;
+    justify-content: space-between;
+  }
+}

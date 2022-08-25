@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER | NIDHISH PAREEK</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body onload="getlocation()">
+    <div id="infocontainer">
+      <div id="searchcontact">
+        <form id="searchdiv">
+          <input type="text" id="searchbar" placeholder="Search City" />
+          <input id="searchbtn" type="submit" value="Q">
+        </form>
+        <button id="me" onclick="window.location.href= 'https://github.com/nidhishpareek/'"> Me</button>
+        
+      </div>
+      <div id="errordiv">No City Found</div>
+      <div id="notvalid">Enter valid city</div>
+      <div id="upper-portion">
+        <div id="current-info">
+          <div id="datetime">
+            <div id="time">
+              <div id="timevalue">10:10</div>
+              <div id="meredian">AM</div>
+            </div>
+            <div id="date">Thrusday, 12 Apr</div>
+          </div>
+          <div id="current-weather-container">
+            <div class="current-weather">
+              <div >Temperature</div>
+              <div id="temp" >24°C</div>
+            </div>
+            <div class="current-weather">
+              <div >FeelsLike</div>
+              <div id="feels_like">24°C</div>
+            </div>
+            <div class="current-weather">
+              <div >Condition</div>
+              <div id="condition">cloudy</div>
+            </div>
+            <div class="current-weather">
+              <div >Humidity</div>
+              <div id="humidity">50%</div>
+            </div>
+            <div class="current-weather">
+              <div >Pressure</div>
+              <div id="pressure">1006 mb</div>
+            </div>
+            <div class="current-weather">
+              <div >WindSpeed</div>
+              <div id="wind_speed">03 m/s</div>
+            </div>
+          </div>
+        </div>
+        <div id="place">
+          <div id="city">No Location</div>
+          <div id="latlot">11.1111N11.1111E</div>
+        </div>
+      </div>
+      <div id="forcast">
+        <div id="today">
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="todaysimg"
+            class="w-icon"
+          />
+          <div id="todayinnerdiv">
+            <div id="weekday">DD/MM/YYYY</div>
+            <div id="temp">Temperature - XX.XX °C</div>
+            <div id="temp">Humidity - XX%</div>
+          </div>
+        </div>
+        <div id="futuredayforcast">
+          <div id="weekday">DD</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weatherimg"
+            class="w-icon"
+          />
+          <div id="temp">Temp - XX.XX °C</div>
+          <div id="temp">Humid - 70%</div>
+        </div>
+        <div id="futuredayforcast">
+          <div id="weekday">DD</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weatherimg"
+            class="w-icon"
+          />
+          <div id="temp">Temp - XX.XX °C</div>
+          <div id="temp">Humid - 70%</div>
+        </div>
+        <div id="futuredayforcast">
+          <div id="weekday">DD</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weatherimg"
+            class="w-icon"
+          />
+          <div id="temp">Temp - XX.XX °C</div>
+          <div id="temp">Humid - 70%</div>
+        </div>
+        <div id="futuredayforcast">
+          <div id="weekday">DD</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weatherimg"
+            class="w-icon"
+          />
+          <div id="temp">Temp - XX.XX °C</div>
+          <div id="temp">Humid - 70%</div>
+        </div>
+        <div id="futuredayforcast">
+          <div id="weekday">DD</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weatherimg"
+            class="w-icon"
+          />
+          <div id="temp">Temp - XX.XX °C</div>
+          <div id="temp">Humid - 70%</div>
+        </div>
+        <div id="futuredayforcast">
+          <div id="weekday">DD</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weatherimg"
+            class="w-icon"
+          />
+          <div id="temp">Temp - XX.XX °C</div>
+          <div id="temp">Humid - 70%</div>
+        </div>
+        <div id="futuredayforcast">
+          <div id="weekday">DD</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weatherimg"
+            class="w-icon"
+          />
+          <div id="temp">Temp - XX.XX °C</div>
+          <div id="temp">Humid - 70%</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="index.js"></script>
